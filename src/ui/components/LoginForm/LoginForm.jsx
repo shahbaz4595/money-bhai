@@ -2,25 +2,23 @@ import style from './LoginForm.module.css'
 import { Button, Input } from '../../bleedBlueReact'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-const guestCred = {
-  email: 'shahbaz.a.khan4595@gmail.com',
-  password: '123456780',
-}
 
 const LoginForm = ({ onSubmit }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isFormValid, setIsFormValid] = useState(false)
+
   const handleLogin = (e) => {
     e.preventDefault()
-    if (e.target.id === 'guest')
-      onSubmit({
-        email: 'shahbaz.a.khan4595@gmail.com',
-        password: '123456780',
-      })
-    else {
-      onSubmit({ email: email, password: password })
-    }
+    onSubmit({ email: email, password: password })
+  }
+
+  const guestLoginHandler = (e) => {
+    e.preventDefault()
+    onSubmit({
+      email: process.env.REACT_APP_GUEST_EMAIL,
+      password: process.env.REACT_APP_GUEST_PASSWORD,
+    })
   }
 
   const checkFormValidity = () => {
@@ -62,7 +60,12 @@ const LoginForm = ({ onSubmit }) => {
       <Button size='medium' variant='primary' disabled={!isFormValid} id='user'>
         Log in
       </Button>
-      <Button size='medium' variant='inverse' id='guest'>
+      <Button
+        size='medium'
+        variant='inverse'
+        id='guest'
+        onClick={guestLoginHandler}
+      >
         Guest
       </Button>
       <Link to={'/reset'}>Forgot Password</Link>
