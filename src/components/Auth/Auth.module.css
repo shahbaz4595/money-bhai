@@ -1,0 +1,30 @@
+.auth-page {
+  background-image: url(../../assets/images/moneybhai.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.auth-form {
+  margin: 7rem 0 1rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .auth-page {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  .tagline {
+    width: 60ch;
+    margin-top: 45vh;
+  }
+  .auth-form {
+    margin: 0;
+  }
+}

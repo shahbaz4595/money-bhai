@@ -1,0 +1,18 @@
+@import url(../../style.css);
+
+.input {
+  min-width: 200px;
+  min-height: 2rem;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid gray;
+  padding: 0 5px;
+}
+
+.input:focus {
+  outline: 2px solid var(--bb-primary-color);
+}
+
+input:invalid:not(:focus) {
+  outline: 2px solid var(--bb-danger-color);
+}

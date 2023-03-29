@@ -1,0 +1,21 @@
+@import url(../../ui//style.css);
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.typed-text {
+  color: orange;
+}
+
+@media screen and (min-width: 768px) {
+  .tagline {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .typed-text {
+    color: orange;
+  }
+}

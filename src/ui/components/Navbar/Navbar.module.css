@@ -1,0 +1,49 @@
+@import url(../../style.css);
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 10vw;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(211, 208, 208);
+  box-shadow: 0px 1px 5px rgb(225, 218, 218);
+}
+
+.branding {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brandLogo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.brandTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--bb-primary-color);
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-menu li a:hover {
+  color: var(--bb-primary-color);
+}

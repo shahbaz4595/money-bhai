@@ -1,0 +1,168 @@
+.basic-badge {
+  padding: 5px 15px;
+  color: white;
+  border-radius: 50px;
+}
+
+.basic-badge.primary {
+  background-color: #1b5cc1;
+}
+
+.basic-badge.secondary {
+  background-color: gray;
+}
+
+.basic-badge.success {
+  background-color: #01800b;
+}
+
+.basic-badge.danger {
+  background-color: #e81905;
+}
+
+.badge-container {
+  position: relative;
+}
+
+.avatar-badge {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  right: 5px;
+  bottom: 25px;
+  border: 2px solid white;
+}
+
+.avatar-badge.lg {
+  width: 20px;
+  height: 20px;
+  right: 3px;
+  bottom: 25px;
+}
+
+.avatar-badge.md {
+  width: 15px;
+  height: 15px;
+  right: 0px;
+  bottom: 18px;
+}
+
+.avatar-badge.sm {
+  width: 12px;
+  height: 12px;
+  right: -2px;
+  bottom: 15px;
+}
+
+.avatar-badge.xs {
+  width: 8px;
+  height: 8px;
+  right: -2px;
+  bottom: 8px;
+}
+
+.avatar-badge.badge-primary {
+  background-color: #1b5cc1;
+}
+
+.avatar-badge.badge-success {
+  background-color: #01800b;
+}
+
+.avatar-badge.badge-secondary {
+  background-color: gray;
+}
+
+.avatar-badge.badge-danger {
+  background-color: red;
+}
+
+.icon-badge {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.icon-badge.xl {
+  width: 35px;
+  height: 35px;
+  right: -3px;
+  top: 2px;
+}
+
+.icon-badge.lg {
+  width: 30px;
+  height: 30px;
+  right: -3px;
+  top: 2px;
+}
+
+.icon-badge.md {
+  width: 25px;
+  height: 25px;
+  right: -3px;
+  top: 2px;
+}
+
+.icon-badge.sm {
+  width: 20px;
+  height: 20px;
+  right: -3px;
+  top: 2px;
+}
+
+.icon-badge.xs {
+  width: 14px;
+  height: 14px;
+  right: -3px;
+  top: -2px;
+  font-size: 0.5rem;
+}
+
+.icon-badge.badge-bell.xl {
+  right: 15px;
+  top: 8px;
+}
+
+.icon-badge.badge-bell.lg {
+  right: 12px;
+  top: 8px;
+}
+
+.icon-badge.badge-bell.md {
+  right: 10px;
+  top: 5px;
+}
+
+.icon-badge.badge-bell.sm {
+  right: 5px;
+  top: 2px;
+}
+
+.icon-badge.badge-bell.xs {
+  right: 2px;
+  top: -2px;
+}
+
+.icon-badge.badge-primary {
+  background-color: #1b5cc1;
+}
+
+.icon-badge.badge-success {
+  background-color: #01800b;
+}
+
+.icon-badge.badge-secondary {
+  background-color: gray;
+}
+
+.icon-badge.badge-danger {
+  background-color: red;
+}
