@@ -30,6 +30,8 @@ const SignupForm = ({ onSignup }) => {
       lastName
     ) {
       setIsFormValid(true)
+    } else {
+      setIsFormValid(false)
     }
   }
 
