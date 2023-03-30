@@ -3,7 +3,7 @@ import { Button, Input } from '../../bleedBlueReact'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const SignupForm = ({ onSignup }) => {
+const SignupForm = ({ onSubmit }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [firstName, setFirstName] = useState('')
@@ -12,7 +12,7 @@ const SignupForm = ({ onSignup }) => {
 
   const handleSignup = (e) => {
     e.preventDefault()
-    onSignup({
+    onSubmit({
       email: email,
       password: password,
       firstName: firstName,
